@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\demoindex.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="8.2.0" />
+    <PackageReference Include="MailKit" Version="4.0.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Xtate.Service.SmtpClient" Version="0.1.39" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Database\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\gopets assets\cat on books plant.svg" />
+    <None Include="wwwroot\gopets assets\Woman taking funny photo with dog.svg" />
+    <None Include="wwwroot\gopets assets\young couple walking with dog.svg" />
+    <None Include="wwwroot\img\screeen shots\cart.svg" />
+    <None Include="wwwroot\img\screeen shots\fav.svg" />
+    <None Include="wwwroot\img\screeen shots\Home - cat.svg" />
+    <None Include="wwwroot\img\screeen shots\LIST OF PETS.svg" />
+    <None Include="wwwroot\img\screeen shots\Login page.svg" />
+    <None Include="wwwroot\img\screeen shots\MY PROFILE.svg" />
+    <None Include="wwwroot\img\screeen shots\PET DESCRIPTION.svg" />
+    <None Include="wwwroot\img\screeen shots\REGISTRATION.svg" />
+    <None Include="wwwroot\index.html" />
+    <None Include="wwwroot\js\vendor\bootstrap.min.js" />
+    <None Include="wwwroot\js\vendor\jquery-1.12.4.min.js" />
+    <None Include="wwwroot\js\vendor\jquery.ajaxchimp.min.js" />
+    <None Include="wwwroot\js\vendor\jquery.counterup.min.js" />
+    <None Include="wwwroot\js\vendor\modernizr-2.8.3-respond-1.4.2.min.js" />
+    <None Include="wwwroot\js\vendor\owl.carousel.min.js" />
+    <None Include="wwwroot\js\vendor\smooth-scroll.min.js" />
+    <None Include="wwwroot\js\vendor\venobox.min.js" />
+    <None Include="wwwroot\js\vendor\waypoints.min.js" />
+    <None Include="wwwroot\js\vendor\wow.min.js" />
+  </ItemGroup>
+
+</Project>

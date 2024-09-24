@@ -1,0 +1,1407 @@
+<!-- 
+-- ==============================================================================
+-- Created By: ANZIL N S  || Created Date: Apr 11th 2023 ||
+-- ==============================================================================
+ -->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GoPetz is here to help you find your ideal furry friend and embark on an exciting journey of love, companionship, and happiness."
+    />
+    <meta
+      name="keywords"
+      content="Gopetz,TL,pets,Adopt,little live pets,best 4 pets,persian cat,campanion"
+    />
+    <meta name="author" content="Author Name" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content="GoPetz" />
+    <meta
+      property="og:description"
+      content="GoPetz is here to help you find your ideal furry friend and embark on an exciting journey of love, companionship, and happiness."
+    />
+    <meta
+      property="og:image"
+      content="https://localhost:7133/img/gopetsMetaImage.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GoPetz" />
+    <meta
+      name="twitter:description"
+      content="GoPetz is here to help you find your ideal furry friend and embark on an exciting journey of love, companionship, and happiness."
+    />
+    <meta
+      name="twitter:image"
+      content="https://localhost:7133/img/gopetsMetaImage.jpg"
+    />
+
+    <title>GoPetz</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/new logo.png" />
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/uicons-regular-rounded.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css"
+    />
+
+    <!-- Elegant Font Icons CSS -->
+    <link rel="stylesheet" href="css/elegant-font-icons.css" />
+    <!-- Elegant Line Icons CSS -->
+    <link rel="stylesheet" href="css/elegant-line-icons.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="css/venobox.css" />
+    <!-- OWL-Carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="css/color.css"> -->
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+      integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4TEQZ0XJ5R"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-4TEQZ0XJ5R");
+    </script>
+    <style>
+      @media (min-width: 768px) {
+        .container {
+          width: none;
+        }
+
+        .site-logo a {
+          display: block;
+        }
+      }
+
+      .badge {
+        position: relative;
+        letter-spacing: 0.08em;
+        color: #ed7979;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+        transform: rotate(-14deg);
+        text-align: center;
+        filter: drop-shadow(0.25em 0.7em 0.95em rgba(240, 108, 108, 0.8));
+        /* min-size + (max-size - min-size) * ( (100vw - min-width) / ( max-width - min-width) ) */
+        font-size: calc(11px + 14 * ((100vw - 420px) / (860)));
+      }
+
+      @media screen and (max-width: 420px) {
+      }
+
+      @media screen and (min-width: 1280px) {
+        .badge {
+          font-size: 25px;
+        }
+      }
+
+      .pre-offer {
+        font-family: "Allerta Stencil", sans-serif;
+        padding: 0;
+        /* background: #efefef; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* min-height: calc(99vh - 140px); */
+      }
+
+      .badge::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 8em;
+        height: 8em;
+        border-radius: 100%;
+        background: #ffffff;
+        opacity: 0.8;
+        transition: opacity 0.3s linear;
+      }
+
+      .badge:hover {
+        color: #dd190b !important;
+        text-decoration: none;
+        transform: rotate(-10deg) scale(1.05);
+      }
+
+      .badge:hover::before {
+        opacity: 0.9;
+      }
+
+      .badge svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        z-index: 0;
+        width: 8em;
+        height: 8em;
+      }
+
+      .badge span {
+        display: block;
+        background: #ffffff;
+        border-radius: 0.4em;
+        padding: 0.4em 1em;
+        z-index: 1;
+        min-width: 11em;
+        border: 1px solid;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#navbar" data-offset="60">
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+
+    <div id="preloader">
+      <div class="loader">
+        <img src="img/preloader.svg" width="60" alt="" />
+      </div>
+    </div>
+    <!-- Preloader -->
+
+    <header id="header" class="header_section">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="nav-btn navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#navbar"
+              aria-expanded="false"
+              aria-controls="navbar"
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="brand logo-dark">
+              <img
+                class="gopetslogo"
+                src="img/Logo Design - Variation Logo.png"
+                alt="Aperture"
+              />
+            </a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse navbar-right">
+            <ul class="nav navbar-nav nav-menu">
+              <li class="active">
+                <a data-scroll href="#home"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li><a data-scroll href="#features">Features</a></li>
+              <li><a data-scroll href="#screenshots">Screenshots</a></li>
+              <li><a data-scroll href="#download">Download</a></li>
+              <li><a data-scroll href="#testimonial">Testimonials</a></li>
+              <li><a data-scroll href="#blog">Pawsome corner</a></li>
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </nav>
+      <!-- Navigation Bar -->
+    </header>
+    <!-- Header -->
+
+    <section id="home">
+      <!-- /.hero_moc -->
+      <!-- <div class="container">
+          <div class="display-table">
+            <div class="table-cell">
+              <div class="col-md-6">
+                <div class="hero_content">
+                  <h1>Adopt a furry friend today with GoPetz<br /></h1>
+                  <p>the easiest way to find your new best friend.</p>
+                  <a href="#" class="hero_btn" style="font-size: 17px"
+                    ><i class="fa fa-cat"></i> Get Started</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      <div
+        id="carouselHacked"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container">
+              <div class="display-table">
+                <div class="table-cell">
+                  <div class="col-md-6">
+                    <div
+                      class="banner-1 hero_content"
+                      style="z-index: 1 !important"
+                    >
+                      <h1>Adopt a furry friend today with GoPetz<br /></h1>
+                      <p>the easiest way to find your new best friend.</p>
+                      <a href="#" class="hero_btn" style="font-size: 17px"
+                        ><i class="fa fa-cat"></i> Get Started</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hero_moc hidden-sm hidden-xs"
+              style="z-index: -1 !important"
+            ></div>
+          </div>
+          <div class="item">
+            <div class="container">
+              <div class="display-table">
+                <div class="table-cell">
+                  <div class="col-md-12">
+                    <div class="hero_content">
+                      <h1 class="text-center">
+                        Discover a world of cuddles and companionship with
+                        GoPetz!<br />
+                      </h1>
+                      <p class="text-center">
+                        Embrace a world of cuddles and everlasting
+                        companionship.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container">
+              <div class="display-table">
+                <div class="table-cell">
+                  <div class="col-md-12">
+                    <div class="hero_content">
+                      <h1 class="text-center">
+                        Empowering pet lovers to find their paw-fect match.<br />
+                      </h1>
+                      <p class="text-center">
+                        Connecting hearts, one paw-fect match at a time!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a
+          class="left carousel-control"
+          href="#carouselHacked"
+          role="button"
+          data-slide="prev"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-left"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="right carousel-control"
+          href="#carouselHacked"
+          role="button"
+          data-slide="next"
+        >
+          <span
+            class="glyphicon glyphicon-chevron-right"
+            aria-hidden="true"
+          ></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    </section>
+    <!-- /.hero_section -->
+    <section class="promo_section">
+      <div class="container">
+        <div class="promo_items">
+          <div class="col-sm-4 col-xs-6 xs-padding">
+            <div class="promo_item">
+              <i class="material-symbols-outlined">search</i>
+              <h3>Find Your Pet</h3>
+              <p>
+                Life is better with a furry friend - let our app help you find
+                yours
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-6 xs-padding">
+            <div class="promo_item">
+              <i class="material-symbols-outlined">storefront</i>
+              <h3>Buy Your Pet</h3>
+              <p>
+                Owning a pet isn't a hobby, it's a commitment - our app helps
+                you do it right.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4 col-xs-6 xs-padding">
+            <div class="promo_item">
+              <i class="material-symbols-outlined">Sell</i>
+              <h3>Sell Your Pet</h3>
+              <p>
+                Make a difference in a pet's life - adopt or foster a pet today.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.promo_section -->
+
+    <section class="doc_section">
+      <div class="container">
+        <div class="col-md-5 col-sm-6 col-md-offset-1 xs-hidden">
+          <div class="doc_mockup">
+            <img src="img/new home.png" class="doc_mockup_1" alt="about-moc" />
+            <img
+              src="img/Group 4.png"
+              class="doc_mockup_2 wow fadeInLeft"
+              data-wow-delay="500ms"
+              data-wow-duration="800ms"
+              alt="about-moc"
+            />
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-6 xs-padding">
+          <div class="doc_content">
+            <h2>
+              What is
+              <span>
+                <img
+                  src="img/whatisgopets.png"
+                  alt="GopetzLogo"
+                  height="28vh"
+                  style="padding-bottom: 5px"
+                />
+              </span>
+            </h2>
+            <p>
+              GoPetz is here to help you find your ideal furry friend and embark
+              on an exciting journey of love, companionship, and happiness. With
+              GoPetz,you can also see detailed information about each pet. We
+              are committed to providing valuable pet care tips and resources to
+              our users.
+            </p>
+            <ul class="list_check mt-30 mb-30">
+              <li>Buy and Sell your companinon.</li>
+              <li>Know more about pet with description.</li>
+              <li>Search and find your best pair.</li>
+              <li>Reviews and Ratings.</li>
+            </ul>
+            <a href="#" class="app_btn">COMING SOON</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.doc_section -->
+
+    <section class="feature_section padding">
+      <div class="container">
+        <div class="section-heading align-center mb-40">
+          <h2 id="features">What Makes GoPetz Different?</h2>
+          <p>
+            Gopetz highlights the unique and useful functionalities that make it
+            the ultimate solution for pet adoption.
+          </p>
+        </div>
+        <div class="feature_wrap">
+          <div class="col-md-4 col-xs-6">
+            <ul class="feature_list text-right xs-no-padding">
+              <li
+                class="list_item mb-40 wow fadeInRight"
+                data-wow-delay="0ms"
+                data-wow-duration="800ms"
+              >
+                <i class="icon-mobile"></i>
+                <h4 class="mb-10">Easy Buy,Sell,Adopt</h4>
+                <p>
+                  GoPetz simplifies the process of buying, selling, and adopting
+                  pets,
+                </p>
+              </li>
+              <li
+                class="list_item mb-40 wow fadeInRight"
+                data-wow-delay="200ms"
+                data-wow-duration="800ms"
+              >
+                <i class="material-symbols-outlined">Pets</i>
+                <h4 class="mb-10">Wide Range of Pet Choices</h4>
+                <p>
+                  The platform offers a selection of pets, ensuring that users
+                  can find their perfect companion
+                </p>
+              </li>
+              <li
+                class="list_item wow fadeInRight"
+                data-wow-delay="400ms"
+                data-wow-duration="800ms"
+              >
+                <i class="material-symbols-outlined">loyalty</i>
+                <h4 class="mb-10">Shortlist and Add to Cart</h4>
+                <p>
+                  Users can conveniently shortlist their favorite pets and add
+                  them to their cart
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-md-4 hidden-sm hidden-xs wow fadeInUp"
+            data-wow-delay="0ms"
+            data-wow-duration="800ms"
+          >
+            <img src="img/new home.png" alt="Service" class="feature_moc" />
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <ul class="feature_list xs-no-padding">
+              <li
+                class="list_item mb-40 wow fadeInLeft"
+                data-wow-delay="0ms"
+                data-wow-duration="800ms"
+              >
+                <i class="icon-profile-male"></i>
+                <h4 class="mb-10">Individual Registration</h4>
+                <p>
+                  Catering to diverse users, GoPetz allows you to register as an
+                  individual or a pet shop owner
+                </p>
+              </li>
+              <li
+                class="list_item mb-40 wow fadeInLeft"
+                data-wow-delay="200ms"
+                data-wow-duration="800ms"
+              >
+                <i class="material-symbols-outlined"> credit_card </i>
+                <h4 class="mb-10">Flexible Payment Options</h4>
+                <p>
+                  With options like cash on delivery and Razor Pay, GoPetz
+                  ensures smooth and secure transaction.
+                </p>
+              </li>
+              <li
+                class="list_item wow fadeInLeft"
+                data-wow-delay="400ms"
+                data-wow-duration="800ms"
+              >
+                <i class="icon-chat"></i>
+                <h4 class="mb-10">Connect with seller</h4>
+                <p>
+                  Gopetz allows you to connect with seller to know more about
+                  your pets
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- feature-section -->
+
+    <section class="screenshot_section padding">
+      <div class="container">
+        <div class="section_heading mb-40 align-center">
+          <h2 id="screenshots">Dive into our app</h2>
+          <p>Get to know about Gopetz.</p>
+        </div>
+        <ul id="app_carousel" class="app_carousel owl-carousel">
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht2.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht2.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht 3.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht 3.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht 4.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht 4.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrsht 1.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrsht 1.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht 6.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht 6.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht 7.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht 7.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/scrnsht 8.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/scrnsht 8.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="shot_item">
+            <figure class="screen_thumb">
+              <img src="img/Group 2.png" alt="App Screenshots" />
+              <figcaption>
+                <div class="display-table">
+                  <div class="table-cell">
+                    <a href="img/Group 2.png" class="img_popup">
+                      <i class="fas fa-paw"></i>
+                    </a>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Screenshot Section -->
+    <!-- <section id="pricing" class="pricing_section padding bg-grey">
+      <div class="container">
+        <div class="heading align-center mb-40">
+          <h2>Plans & Pricing</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        /.heading
+        <div class="pricing_items">
+          <div class="col-md-3 col-xs-6 sm-padding">
+            <div
+              class="pricing_table wow flipInY"
+              data-wow-delay="0ms"
+              data-wow-duration="1000ms"
+            >
+              <div class="pricing_head">
+                <h5>BASIC</h5>
+                <h3>$49 <span>/ Month</span></h3>
+                <p class="no-margin">Appdent Pricing Table Design.</p>
+              </div>
+              /.pricing_head
+              <ul class="pricing_list">
+                <li>1 User</li>
+                <li>1 Dashboard</li>
+                <li>5 Projects</li>
+                <li class="red">Custom Domain</li>
+              </ul>
+              <div class="pricing_footer">
+                <a href="#" class="app_btn">purchase</a>
+              </div>
+            </div>
+          </div>
+          pricing 1
+          <div class="col-md-3 col-xs-6 sm-padding">
+            <div
+              class="pricing_table mid_table wow flipInY"
+              data-wow-delay="200ms"
+              data-wow-duration="1000ms"
+            >
+              <div class="pricing_head">
+                <h5>BUSINESS</h5>
+                <h3>$99 <span>/ Month</span></h3>
+                <p class="no-margin">Appdent Pricing Table Design.</p>
+              </div>
+              /.pricing_head
+              <ul class="pricing_list">
+                <li>1 User</li>
+                <li>1 Dashboard</li>
+                <li>5 Projects</li>
+                <li>Custom Domain</li>
+              </ul>
+              <div class="pricing_footer">
+                <a href="#" class="hero_btn">purchase</a>
+              </div>
+            </div>
+          </div>
+          pricing 2
+          <div class="col-md-3 col-xs-6 sm-padding">
+            <div
+              class="pricing_table wow flipInY"
+              data-wow-delay="400ms"
+              data-wow-duration="1000ms"
+            >
+              <div class="pricing_head">
+                <h5>PREMIUM</h5>
+                <h3>$149 <span>/ Month</span></h3>
+                <p class="no-margin">Appdent Pricing Table Design.</p>
+              </div>
+              /.pricing_head
+              <ul class="pricing_list">
+                <li>1 User</li>
+                <li>1 Dashboard</li>
+                <li>5 Projects</li>
+                <li>Custom Domain</li>
+              </ul>
+              <div class="pricing_footer">
+                <a href="#" class="app_btn">purchase</a>
+              </div>
+            </div>
+          </div>
+          pricing 3
+          <div class="col-md-3 col-xs-6 sm-padding">
+            <div
+              class="pricing_table wow flipInY"
+              data-wow-delay="500ms"
+              data-wow-duration="1000ms"
+            >
+              <div class="pricing_head">
+                <h5>ULTIMATE</h5>
+                <h3>$199 <span>/ Month</span></h3>
+                <p class="no-margin">Appdent Pricing Table Design.</p>
+              </div>
+              /.pricing_head
+              <ul class="pricing_list">
+                <li>1 User</li>
+                <li>1 Dashboard</li>
+                <li>5 Projects</li>
+                <li>Custom Domain</li>
+              </ul>
+              <div class="pricing_footer">
+                <a href="#" class="app_btn">purchase</a>
+              </div>
+            </div>
+          </div>
+          pricing 4
+        </div>
+      </div>
+    </section> -->
+    <!-- /.pricing_section -->
+
+    <section id="download" class="download_section">
+      <div class="container pre-offer">
+        <div>
+          <div class="counter_content">
+            <!-- <h3 class="counter">12649</h3> -->
+            <h4>COMING SOON</h4>
+            <h5>Available On Google Play Store & The App Store!</h5>
+          </div>
+          <ul class="download_content">
+            <li>
+              <a href="#"><i class="fab fa-android"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-apple"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="#subscribe" class="badge">
+          <svg viewBox="0 0 210 210">
+            <g stroke="none" fill="none">
+              <path
+                d="M22,104.5 C22,58.9365081 58.9365081,22 104.5,22 C150.063492,22 187,58.9365081 187,104.5"
+                id="top"
+              ></path>
+              <path
+                d="M22,104.5 C22,150.063492 58.9365081,187 104.5,187 C150.063492,187 187,150.063492 187,104.5"
+                id="bottom"
+              ></path>
+            </g>
+            <circle
+              cx="105"
+              cy="105"
+              r="62"
+              stroke="currentColor"
+              stroke-width="1"
+              fill="none"
+            />
+            <text width="200" font-size="20" fill="currentColor">
+              <textPath
+                startOffset="50%"
+                text-anchor="middle"
+                alignment-baseline="middle"
+                xlink:href="#top"
+              >
+                Pre-release
+              </textPath>
+            </text>
+            <text width="200" font-size="20" fill="currentColor">
+              <textPath
+                startOffset="50%"
+                text-anchor="middle"
+                alignment-baseline="middle"
+                xlink:href="#bottom"
+              >
+                contact us
+              </textPath>
+            </text>
+          </svg>
+          <span>Offers</span>
+        </a>
+      </div>
+    </section>
+    <!-- /.download_section -->
+
+    <section id="testimonial" class="testimonial_section">
+      <div class="container">
+        <ul id="testimonial_carousel" class="testimonial_items owl-carousel">
+          <li class="testimonial_item">
+            <p>
+              I found my perfect furry companion through this app! The process
+              was easy and straightforward,<br />
+              and I couldn't be happier with my new best friend. Thank you!
+            </p>
+            <h4>Anita Tran, IT Solutions.</h4>
+          </li>
+          <li class="testimonial_item">
+            <p>
+              "I had a great experience using the app to sell my puppies. The
+              process was quick and easy,<br />
+              and I was able to connect with interested buyers in no time.
+              Highly recommended"
+            </p>
+            <h4>Leslie Williamson, Developer.</h4>
+          </li>
+          <li class="testimonial_item">
+            <p>
+              "There are design companies, and then there are user experience
+              design interface design<br />
+              professional. By far one of the worlds best known brands."
+            </p>
+            <h4>Fred Moody, Network Software.</h4>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.testimonial_section -->
+
+    <section class="blog_area padding">
+      <div class="container">
+        <div class="row">
+          <div class="section_heading align-center mb-40">
+            <h2>GOPETZ PAWSOME CORNER</h2>
+            <p>
+              Our innovative platform is constantly evolving, and we're excited
+              to introduce new remarkable features.
+            </p>
+          </div>
+        </div>
+        <!-- Section Heading -->
+        <div class="row" id="blog">
+          <div class="blog_items">
+            <div class="col-md-4 col-xs-6 sm-padding">
+              <div
+                class="blog_item wow swing"
+                data-wow-delay="0ms"
+                data-wow-duration="1000ms"
+              >
+                <figure class="post_thumb">
+                  <img src="img/IMAGE.png" alt="Blog Post" />
+                  <div class="span">Coming<br />Soon</div>
+                  <a href="#" class="blog_title">
+                    <h3>Adopt a pet.</h3>
+                  </a>
+                </figure>
+                <div class="post_content">
+                  <p>
+                    Adopting a pet can bring a lot of joy and love into your
+                    life.
+                  </p>
+                  <a href="#" class="read_more_btn">Coming Soon</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 sm-padding">
+              <div
+                class="blog_item wow swing"
+                data-wow-delay="200ms"
+                data-wow-duration="1000ms"
+              >
+                <figure class="post_thumb">
+                  <img src="img/IMAGE 2.png" alt="Blog Post" />
+                  <div class="span">Coming<br />Soon</div>
+                  <a href="#" class="blog_title">
+                    <h3>Consult a doctor.</h3>
+                  </a>
+                </figure>
+                <div class="post_content">
+                  <p>
+                    Expert care for your furry friend<br />consult with a
+                    veterinarian today.
+                  </p>
+                  <a href="#" class="read_more_btn">Coming Soon</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-6 sm-padding">
+              <div
+                class="blog_item wow swing"
+                data-wow-delay="400ms"
+                data-wow-duration="1000ms"
+              >
+                <figure class="post_thumb">
+                  <img src="img/IMAGE 3.png" alt="Blog Post" />
+                  <div class="span">Coming<br />Soon</div>
+                  <a href="#" class="blog_title">
+                    <h3>Health Tips.</h3>
+                  </a>
+                </figure>
+                <div class="post_content">
+                  <p>
+                    Find best health tips for your pet companinon from
+                    experienced one.
+                  </p>
+                  <a href="#" class="read_more_btn">Coming Soon</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Blog Post Items -->
+      </div>
+    </section>
+    <!--   Blog Section     -->
+    <div id="preloader" style="display: none">
+      <!-- Add your preloader content here -->
+      Loading...
+    </div>
+    <section class="subscribe_section-2">
+      <div class="child-1">
+        <h2>
+          Download the GoPetz mobile application on your smartphone or tablet
+          and unlock a range of features and benefits tailored to meet your
+          pet-related needs. Whether you're a passionate pet lover seeking
+          valuable resources or a pet store owner looking to connect with a
+          wider audience, GoPetz has you covered.
+        </h2>
+      </div>
+
+      <div class="child-2">
+        <h2>
+          Download the GoPetz mobile application on your smartphone or tablet
+          and unlock a range of features and benefits tailored to meet your
+          pet-related needs. Whether you're a passionate pet lover seeking
+          valuable resources or a pet store owner looking to connect with a
+          wider audience, GoPetz has you covered.
+        </h2>
+      </div>
+      <div class="subscribe_wrapper">
+        <div class="container sub-container">
+          <div class="subscribe_wrap" id="subscribe">
+            <form action="" class="subscribe_form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form_input"
+                placeholder="Enter Your Email Address..."
+              />
+              <button class="submit" onclick="sendEmail()">Subscribe</button>
+              <div class="clearfix"></div>
+              <div id="subscribe-result">
+                <p class="subscription-success"></p>
+                <p class="subscription-error"></p>
+              </div>
+            </form>
+          </div>
+
+          <ul class="social_link social-icons">
+            <li>
+              <a
+                class="facebook"
+                href="https://www.facebook.com/profile.php?id=100091325113320"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+
+            <li>
+              <a class="pinterest" href="https://in.pinterest.com/gopetz235/">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/gopetz-petz-4b673026b/"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                class="instagram"
+                href="https://www.instagram.com/gopetz_petz/"
+              >
+                <i class="fab fa-instagram" style="font-size: 20px"></i>
+              </a>
+            </li>
+            <li>
+              <a class="google" href="#">
+                <i class="fab fa-google" style="font-size: 20px"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- <div id="subscribe" class="subscribe_section">
+   
+    </div> -->
+    <!-- /.footer_top_section -->
+    <!-- <footer class="footer_section"> -->
+    <!-- <div class="container"> -->
+    <!-- <div class=" footer_logo col-sm-6 xs-padding" style="display: flex; justify-content: flex-start; align-items: center;">
+              <img src="img/Main-Logo_PNG 4.png" alt="Your image description" style="max-width: 5vh;">
+              <p style="margin-left: 5px; margin-top: 20px;">&copy;TL TECHNOLOGIES PRIVATE LIMITED.</p>
+              <ul class="social_link 2"> -->
+    <!-- <li>
+                  <a href=""><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google-plus"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                 <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+                 <li>
+                  <a href="https://twitter.com/Tltechnologies"><i class="fa fa-twitter"></i></a>
+                </li>
+              </ul> -->
+    <!-- </div>
+          </div>
+        <nav class="col-sm-6 xs-padding">
+          <ul class="footer_menu">
+            <div class=" footer_logo col-sm-6 xs-padding" style="display: flex; justify-content: flex-start; align-items: center;">
+              <img src="img/Main-Logo_PNG 4.png" alt="Your image description" style="max-width: 5vh;">
+              <p style="margin-left: 5px; margin-top: 20px;">&copy;TL TECHNOLOGIES PRIVATE LIMITED.</p>
+              <ul class="social_link 2">
+            <li>
+              <a href=""><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+             <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+             <li>
+              <a href="https://twitter.com/Tltechnologies"><i class="fa fa-twitter"></i></a>
+            </li>
+          </ul>
+        </nav> -->
+    <!-- </div>
+    </footer> -->
+    <!-- <footer class="footer_section">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+
+
+              <div style="padding: 20px; text-align: justify;">
+                <h3 style="font-size: 1.2em; margin-bottom: 10px; color: brown;">Contact Us</h3>
+                <p style="font-size: 0.8em; margin-bottom: 5px; color: black;">Email: info@tltechnologies.net</p>
+                <p style="font-size: 0.8em; margin-bottom: 5px; color: black;">Phone: +91 9061432814</p>
+                <p style="font-size: 0.8em; margin-bottom: 5px; text-align: justify; color: black;">
+                  Address: TL TECHNOLOGIES PVT LTD
+                  Vilame 1st Floor <br />
+                  DOTSPACE BUSINESS CENTER
+                  Near Al Uthuman School <br />
+                  Pincode : 695585
+                </p>
+              </div>
+
+
+
+              <div class="site-logo">
+                <a href="https://tltechnologies.net/" target="_blank" style="display: flex; align-items: center;">
+                  <span style="font-size: 18px; color: brown; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">POWERED BY</span>
+                  <img src="img/Main-Logo_PNG 4.png" alt="Logo" style="height: 50px; margin-left: 10px;">
+                </a>
+              </div>
+                </div>
+
+
+            <div class="site-copyright">
+              <p style="font-size: 10px;">© 2023 <a href="https://allmylinks.com/tltechnologies" target="_blank">TL TECHNOLOGIES PVT LTD</a> All Rights Reserved</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <!-- <div class="video_section align-center">
+            <div class="container">
+                <div class="video_content">
+                    <a href="https://youtu.be/5PSNL1qE6VY" data-vbtype="video" class="img_popup"><i class="fa fa-play"></i></a>
+                    <span>Play Video</span>
+                </div>
+            </div>
+        </div> -->
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Welcome to GoPetz, the ultimate pet platform by TL Technologies
+              PVT LTD, where pet lovers discover their fluffy companions! We are
+              committed to providing valuable pet care tips and resources to our
+              users. Our comprehensive blog section is full of useful
+              information to help you understand and care for your pets better.
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li>
+                <a href="#screenshots">Screenshots</a>
+              </li>
+              <li>
+                <a href="#download">Download</a>
+              </li>
+              <li><a href="#testimonial">Testimonials</a></li>
+              <li>
+                <a href="#blog">Pawsome Corner</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="site-logo" style="padding-left: 10px">
+            <a href="https://tltechnologies.net/" target="_blank">
+              <span
+                style="
+                  font-size: 18px;
+                  color: brown;
+                  font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                "
+                >POWERED BY</span
+              >
+              <img
+                src="img/Main-Logo_PNG 4.png"
+                alt="Logo"
+                style="height: 60px; margin-left: 10px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2023
+              <a href="https://tltechnologies.net/" style="color: red"
+                >TL TECHNOLOGIES PRIVATE LIMITED</a
+              >.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a
+                  class="facebook"
+                  href="https://www.facebook.com/TLTechnologiesNET/"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/tl_technologies">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="pinterest"
+                  href="https://in.pinterest.com/tltechnologiespvtltd/"
+                >
+                  <i class="fab fa-pinterest"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="linkedin"
+                  href="https://www.linkedin.com/company/tltechnologiespvtltd"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="instagram"
+                  href="https://www.instagram.com/tltechnologiespvtltd/"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a data-scroll href="#header" id="scroll-to-top">
+      <i class="arrow_carrot-up"></i>
+    </a>
+    <script>
+      $("#carouselHacked").carousel();
+
+      // function sendEmail(email) {
+      //   $.ajax({
+      //     url: "/api/email",
+      //     type: "POST",
+      //     contentType: "application/json",
+      //     data: JSON.stringify({
+      //       To: email,
+      //       Subject: "Thank you for Subscribing TSO BRIARGROVE  ",
+      //       Body: "This is an example email sent from JavaScript using AJAX.",
+      //     }),
+      //     success: function () {
+      //       alert("Thank you for subscribing with email: " + email + "! We appreciate your support");
+      //     },
+      //     error: function (xhr, status, error) {
+      //       alert("Error sending email: " + error);
+      //     },
+      //   });
+      // }
+      function sendEmail() {
+        var email = document.querySelector("#email").value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailRegex.test(email)) {
+          // Show loading animation
+          //   showLoadingAnimation();
+
+          var formData = {
+            email: $("#email").val(),
+            // resumepdf: $('#resumepdf')[0].files[0]
+          };
+
+          // Make an AJAX POST request
+          $.ajax({
+            url: "https://localhost:7133/api/Application",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(formData),
+            success: function (response) {
+              // Hide loading animation
+              //   hideLoadingAnimation();
+
+              // Show success message
+              showSuccessMessage("Thank you for subscribing.");
+
+              // Reload the current page
+            },
+            error: function (error) {
+              // Hide loading animation
+              //   hideLoadingAnimation();
+
+              // Show error message
+              Swal.fire({
+                icon: "info",
+                text: "You are a valued subscriber.",
+              }).then(() => {
+                // Clear the input field
+                $("#email").val("");
+                // Reload the current page
+              });
+
+              // Reload the current page
+            },
+          });
+        } else if (email == "") {
+          // Show error message
+          showErrorMessage("Please fill the field.");
+        } else {
+          // Show error message
+          showErrorMessage("Please enter a valid email address.");
+        }
+      }
+
+      //   function showLoadingAnimation() {
+
+      //     $("#preloader").show();
+      //   }
+
+      //   function hideLoadingAnimation() {
+
+      //     $("#preloader").hide();
+      //   }
+
+      function showSuccessMessage(message) {
+        // Use SweetAlert to show the success message
+        Swal.fire({
+          icon: "success",
+          text: message,
+        }).then(() => {
+          // Clear the input field
+          $("#email").val("");
+          // Reload the current page
+        });
+      }
+
+      function showErrorMessage(message) {
+        // Use SweetAlert to show the error message
+        Swal.fire({
+          icon: "error",
+          text: message,
+        });
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+    <!-- jQuery Lib -->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <!-- waypoints js -->
+    <script src="js/vendor/waypoints.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!-- OWL-Carousel JS -->
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <!-- Smooth Scroll JS -->
+    <script src="js/vendor/smooth-scroll.min.js"></script>
+    <!-- venobox JS -->
+    <script src="js/vendor/venobox.min.js"></script>
+    <!-- Counterup JS -->
+    <script src="js/vendor/jquery.counterup.min.js"></script>
+    <!-- Ajaxchimp JS -->
+    <script src="js/vendor/jquery.ajaxchimp.min.js"></script>
+    <!-- wow JS -->
+    <script src="js/vendor/wow.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
